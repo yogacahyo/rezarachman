@@ -1,65 +1,21 @@
-import styles from "./Experience.module.css";
+"use client";
 
-const projects = [
-  {
-    year: "2016",
-    title:
-      "Analisis Sistem Distribusi Tiket Bus Antar Kota Antar Provinsi (AKAP) dan Peta Jaringan Para Pelakunya Di Provinsi Jawa Timur",
-  },
-  {
-    year: "2017",
-    title:
-      "Person in Charge Jakarta Marketing Week 2017 oleh Mark Plus Inc. untuk Fakultas Ilmu Administrasi Universitas Brawijaya",
-  },
-  { year: "2017", title: "Manajemen Akselerasi Pembangunan Kabupaten Gresik" },
-  {
-    year: "2018",
-    title:
-      "Pendidikan dan Pelatihan Pemasaran dan Promosi Pariwisata Pemerintah Kabupaten Malang",
-  },
-  {
-    year: "2018",
-    title:
-      "Penyusunan Model BUMDes untuk Jenis Layanan Publik Based on Practice Kerjasama Perguruan Tinggi",
-  },
-  {
-    year: "2019",
-    title:
-      "Analisa Pasar untuk Promosi dan Pemasaran Obyek Pariwisata Kabupaten Malang",
-  },
-  { year: "2019", title: "Analisis Pemasaran Kepariwisataan Kabupaten Malang" },
-  {
-    year: "2019",
-    title:
-      "Model Kolaborasi Lembaga Akademis dan Korporasi dalam Rangka Inkubasi BUMDes",
-  },
-  {
-    year: "2019",
-    title:
-      "Kajian Kuantitatif dan Calon Ibukota Kabupaten dalam Rangka Pembentukan Calon Kabupaten Lombok Selatan sebagai Pemekaran dari Kabupaten Lombok Timur",
-  },
-  {
-    year: "2020",
-    title:
-      "Penyusunan Cascading (Manajemen Kinerja) di Lingkungan Badan Narkotika Nasional",
-  },
-  {
-    year: "2020",
-    title: "Penyusunan Rancangan Peraturan Presiden Badan Narkotika Nasional",
-  },
-  { year: "2021", title: "Analisis Jabatan di Badan Narkotika Nasional" },
-  { year: "2022", title: "Analisis Pasar Wisatawan Nusantara di Jawa Timur" },
-  {
-    year: "2022",
-    title: "Penyusunan Peta Potensi dan Peluang Usaha di Kabupaten Tuban",
-  },
-];
+import styles from "./Experience.module.css";
+import { useLanguage } from "../context/LanguageContext";
+
+interface Project {
+  year: string;
+  title: string;
+}
 
 export default function Experience() {
+  const { t } = useLanguage();
+  const projects = t("experience.projects") as unknown as Project[];
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.heading}>Pengalaman Project</h2>
+        <h2 className={styles.heading}>{t("experience.heading")}</h2>
         <div className={styles.divider}></div>
 
         <div className={styles.timeline}>

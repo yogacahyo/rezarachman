@@ -1,6 +1,6 @@
 /* [project]/app/components/Skills.module.css [app-client] (css) */
 .Skills-module__lhWK4a__section {
-  background-color: #111;
+  background-color: var(--bg-alt);
   justify-content: center;
   width: 100%;
   padding: 4rem 2rem 6rem;

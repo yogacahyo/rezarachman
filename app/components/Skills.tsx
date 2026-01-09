@@ -1,29 +1,19 @@
+"use client";
+
 import styles from "./Skills.module.css";
-
-const responsibilities = [
-  "Input data responden",
-  "Menyusun dokumen substansi",
-  "Menyusun laporan beserta seluruh insights",
-  "Analisis data",
-  "Media sosial", // Shortened for design balance, or keep full "Mengelola media sosial"
-  "Mengamati dan mengidentifikasi tren",
-];
-
-const competencies = [
-  "Manajemen waktu",
-  "Mampu bekerja dalam beberapa project",
-  "Memiliki keterampilan kompetensi dasar komputer",
-  "Mampu menggunakan Ms. Office",
-  "Mampu berkomunikasi dengan baik",
-  "Mampu bekerja dalam tim dengan baik",
-];
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Skills() {
+  const { t } = useLanguage();
+
+  const responsibilities = t("skills.responsibilities") as unknown as string[];
+  const competencies = t("skills.competencies") as unknown as string[];
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.column}>
-          <h2 className={styles.heading}>Tanggung Jawab Utama</h2>
+          <h2 className={styles.heading}>{t("skills.heading")}</h2>
           <div className={styles.divider}></div>
           <ul className={styles.list}>
             {responsibilities.map((item, index) => (
@@ -36,7 +26,7 @@ export default function Skills() {
         </div>
 
         <div className={styles.column}>
-          <h2 className={styles.heading}>Keahlian & Kompetensi</h2>
+          <h2 className={styles.heading}>{t("skills.competencyHeading")}</h2>
           <div className={styles.divider}></div>
           <ul className={styles.list}>
             {competencies.map((item, index) => (

@@ -1,7 +1,7 @@
 .section {
   width: 100%;
   padding: 4rem 2rem 6rem;
-  background-color: #111111;
+  background-color: var(--bg-alt);
   display: flex;
   justify-content: center;
 }

@@ -10,6 +10,11 @@ export const metadata: Metadata = {
     "Professional Portfolio of Reza Rachman P., Analis Substantif Project.",
 };
 
+import { ThemeProvider } from "./context/ThemeContext";
+import { LanguageProvider } from "./context/LanguageContext";
+
+import Header from "./components/Header";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -17,7 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ThemeProvider>
+          <LanguageProvider>
+            <Header />
+            {children}
+          </LanguageProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

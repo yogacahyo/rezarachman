@@ -1,15 +1,29 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ededed;
-  
+
   /* Color Palette */
-  --primary: #8AB4F8; /* Soft Blue */
-  --accent: #FFD700; /* Gold */
+  --primary: #8ab4f8; /* Soft Blue */
+  --accent: #ffd700; /* Gold */
   --secondary: #1f1f1f; /* Dark Grey for cards */
+  --bg-alt: #111111; /* Slightly lighter background for alternating sections */
   --border: #333333;
   --text-dim: #888888;
-  
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root[data-theme="light"] {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --primary: #2563eb;
+  --accent: #d97706;
+  --secondary: #f3f4f6;
+  --bg-alt: #f8fafc; /* Very light cool grey */
+  --border: #e5e7eb;
+  --text-dim: #6b7280;
 }
 
 * {

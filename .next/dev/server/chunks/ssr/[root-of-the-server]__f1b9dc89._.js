@@ -35,9 +35,12 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/app/components/Hero.module.css [app-rsc] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/context/LanguageContext.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 function Hero() {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useLanguage"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].hero,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -45,29 +48,29 @@ function Hero() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].name,
-                    children: "REZA RACHMAN P."
+                    children: t("hero.name")
                 }, void 0, false, {
                     fileName: "[project]/app/components/Hero.tsx",
-                    lineNumber: 7,
+                    lineNumber: 10,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].divider
                 }, void 0, false, {
                     fileName: "[project]/app/components/Hero.tsx",
-                    lineNumber: 8,
+                    lineNumber: 11,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].contactInfo,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "mailto:rezarachmanp@gmail.com",
+                            href: `mailto:${t("hero.email")}`,
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].contactLink,
-                            children: "rezarachmanp@gmail.com"
+                            children: t("hero.email")
                         }, void 0, false, {
                             fileName: "[project]/app/components/Hero.tsx",
-                            lineNumber: 10,
+                            lineNumber: 13,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -79,9 +82,9 @@ function Hero() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "tel:+6281233675867",
+                            href: `tel:${t("hero.phone")}`,
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].contactLink,
-                            children: "+62 8123-3675-867"
+                            children: t("hero.phone")
                         }, void 0, false, {
                             fileName: "[project]/app/components/Hero.tsx",
                             lineNumber: 17,
@@ -97,7 +100,7 @@ function Hero() {
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Hero$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].address,
-                            children: "Jl. Sunan Muria II no. 7, Malang"
+                            children: t("hero.address")
                         }, void 0, false, {
                             fileName: "[project]/app/components/Hero.tsx",
                             lineNumber: 21,
@@ -106,18 +109,18 @@ function Hero() {
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Hero.tsx",
-                    lineNumber: 9,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Hero.tsx",
-            lineNumber: 6,
+            lineNumber: 9,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Hero.tsx",
-        lineNumber: 5,
+        lineNumber: 8,
         columnNumber: 5
     }, this);
 }
@@ -145,9 +148,12 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/app/components/Profile.module.css [app-rsc] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/context/LanguageContext.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 function Profile() {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useLanguage"])();
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].section,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -158,42 +164,33 @@ function Profile() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].heading,
-                            children: "Profil"
+                            children: t("profile.heading")
                         }, void 0, false, {
                             fileName: "[project]/app/components/Profile.tsx",
-                            lineNumber: 8,
+                            lineNumber: 11,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].divider
                         }, void 0, false, {
                             fileName: "[project]/app/components/Profile.tsx",
-                            lineNumber: 9,
+                            lineNumber: 12,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].text,
-                            children: [
-                                "Analis Substantif Project lebih dari 5 tahun bekerja di lembaga konsultan sektor publik dan sektor swasta. Memiliki pengalaman beberapa project mengolah data yang berkaitan dengan perilaku konsumen. Seorang yang dapat diandalkan, bertanggung jawab, suka bekerja sama dengan tim, selalu tepat waktu, dan",
-                                " ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
-                                    children: "ready to level up"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/Profile.tsx",
-                                    lineNumber: 16,
-                                    columnNumber: 13
-                                }, this),
-                                "."
-                            ]
-                        }, void 0, true, {
+                            dangerouslySetInnerHTML: {
+                                __html: t("profile.description")
+                            }
+                        }, void 0, false, {
                             fileName: "[project]/app/components/Profile.tsx",
-                            lineNumber: 10,
+                            lineNumber: 13,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Profile.tsx",
-                    lineNumber: 7,
+                    lineNumber: 10,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -201,17 +198,17 @@ function Profile() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].heading,
-                            children: "Pendidikan Terakhir"
+                            children: t("profile.educationHeading")
                         }, void 0, false, {
                             fileName: "[project]/app/components/Profile.tsx",
-                            lineNumber: 21,
+                            lineNumber: 20,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].divider
                         }, void 0, false, {
                             fileName: "[project]/app/components/Profile.tsx",
-                            lineNumber: 22,
+                            lineNumber: 21,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -219,41 +216,41 @@ function Profile() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].university,
-                                    children: "S1 Universitas Brawijaya"
+                                    children: t("profile.university")
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Profile.tsx",
-                                    lineNumber: 24,
+                                    lineNumber: 23,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Profile$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].major,
-                                    children: "Administrasi Bisnis"
+                                    children: t("profile.major")
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Profile.tsx",
-                                    lineNumber: 25,
+                                    lineNumber: 24,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/components/Profile.tsx",
-                            lineNumber: 23,
+                            lineNumber: 22,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Profile.tsx",
-                    lineNumber: 20,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Profile.tsx",
-            lineNumber: 6,
+            lineNumber: 9,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Profile.tsx",
-        lineNumber: 5,
+        lineNumber: 8,
         columnNumber: 5
     }, this);
 }
@@ -282,67 +279,13 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Experience$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/app/components/Experience.module.css [app-rsc] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/context/LanguageContext.tsx [app-rsc] (ecmascript)");
 ;
 ;
-const projects = [
-    {
-        year: "2016",
-        title: "Analisis Sistem Distribusi Tiket Bus Antar Kota Antar Provinsi (AKAP) dan Peta Jaringan Para Pelakunya Di Provinsi Jawa Timur"
-    },
-    {
-        year: "2017",
-        title: "Person in Charge Jakarta Marketing Week 2017 oleh Mark Plus Inc. untuk Fakultas Ilmu Administrasi Universitas Brawijaya"
-    },
-    {
-        year: "2017",
-        title: "Manajemen Akselerasi Pembangunan Kabupaten Gresik"
-    },
-    {
-        year: "2018",
-        title: "Pendidikan dan Pelatihan Pemasaran dan Promosi Pariwisata Pemerintah Kabupaten Malang"
-    },
-    {
-        year: "2018",
-        title: "Penyusunan Model BUMDes untuk Jenis Layanan Publik Based on Practice Kerjasama Perguruan Tinggi"
-    },
-    {
-        year: "2019",
-        title: "Analisa Pasar untuk Promosi dan Pemasaran Obyek Pariwisata Kabupaten Malang"
-    },
-    {
-        year: "2019",
-        title: "Analisis Pemasaran Kepariwisataan Kabupaten Malang"
-    },
-    {
-        year: "2019",
-        title: "Model Kolaborasi Lembaga Akademis dan Korporasi dalam Rangka Inkubasi BUMDes"
-    },
-    {
-        year: "2019",
-        title: "Kajian Kuantitatif dan Calon Ibukota Kabupaten dalam Rangka Pembentukan Calon Kabupaten Lombok Selatan sebagai Pemekaran dari Kabupaten Lombok Timur"
-    },
-    {
-        year: "2020",
-        title: "Penyusunan Cascading (Manajemen Kinerja) di Lingkungan Badan Narkotika Nasional"
-    },
-    {
-        year: "2020",
-        title: "Penyusunan Rancangan Peraturan Presiden Badan Narkotika Nasional"
-    },
-    {
-        year: "2021",
-        title: "Analisis Jabatan di Badan Narkotika Nasional"
-    },
-    {
-        year: "2022",
-        title: "Analisis Pasar Wisatawan Nusantara di Jawa Timur"
-    },
-    {
-        year: "2022",
-        title: "Penyusunan Peta Potensi dan Peluang Usaha di Kabupaten Tuban"
-    }
-];
+;
 function Experience() {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useLanguage"])();
+    const projects = t("experience.projects");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Experience$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].section,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -350,17 +293,17 @@ function Experience() {
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Experience$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].heading,
-                    children: "Pengalaman Project"
+                    children: t("experience.heading")
                 }, void 0, false, {
                     fileName: "[project]/app/components/Experience.tsx",
-                    lineNumber: 62,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Experience$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].divider
                 }, void 0, false, {
                     fileName: "[project]/app/components/Experience.tsx",
-                    lineNumber: 63,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -372,7 +315,7 @@ function Experience() {
                                     className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Experience$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].marker
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/Experience.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 22,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -383,7 +326,7 @@ function Experience() {
                                             children: project.year
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Experience.tsx",
-                                            lineNumber: 70,
+                                            lineNumber: 24,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -391,35 +334,35 @@ function Experience() {
                                             children: project.title
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Experience.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 25,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/components/Experience.tsx",
-                                    lineNumber: 69,
+                                    lineNumber: 23,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, index, true, {
                             fileName: "[project]/app/components/Experience.tsx",
-                            lineNumber: 67,
+                            lineNumber: 21,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/components/Experience.tsx",
-                    lineNumber: 65,
+                    lineNumber: 19,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Experience.tsx",
-            lineNumber: 61,
+            lineNumber: 15,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Experience.tsx",
-        lineNumber: 60,
+        lineNumber: 14,
         columnNumber: 5
     }, this);
 }
@@ -445,25 +388,14 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/app/components/Skills.module.css [app-rsc] (css module)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/context/LanguageContext.tsx [app-rsc] (ecmascript)");
 ;
 ;
-const responsibilities = [
-    "Input data responden",
-    "Menyusun dokumen substansi",
-    "Menyusun laporan beserta seluruh insights",
-    "Analisis data",
-    "Media sosial",
-    "Mengamati dan mengidentifikasi tren"
-];
-const competencies = [
-    "Manajemen waktu",
-    "Mampu bekerja dalam beberapa project",
-    "Memiliki keterampilan kompetensi dasar komputer",
-    "Mampu menggunakan Ms. Office",
-    "Mampu berkomunikasi dengan baik",
-    "Mampu bekerja dalam tim dengan baik"
-];
+;
 function Skills() {
+    const { t } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$context$2f$LanguageContext$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["useLanguage"])();
+    const responsibilities = t("skills.responsibilities");
+    const competencies = t("skills.competencies");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].section,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -474,17 +406,17 @@ function Skills() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].heading,
-                            children: "Tanggung Jawab Utama"
+                            children: t("skills.heading")
                         }, void 0, false, {
                             fileName: "[project]/app/components/Skills.tsx",
-                            lineNumber: 26,
+                            lineNumber: 14,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].divider
                         }, void 0, false, {
                             fileName: "[project]/app/components/Skills.tsx",
-                            lineNumber: 27,
+                            lineNumber: 15,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -497,25 +429,25 @@ function Skills() {
                                             children: "•"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Skills.tsx",
-                                            lineNumber: 31,
+                                            lineNumber: 19,
                                             columnNumber: 17
                                         }, this),
                                         item
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/app/components/Skills.tsx",
-                                    lineNumber: 30,
+                                    lineNumber: 18,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/components/Skills.tsx",
-                            lineNumber: 28,
+                            lineNumber: 16,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Skills.tsx",
-                    lineNumber: 25,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -523,17 +455,17 @@ function Skills() {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].heading,
-                            children: "Keahlian & Kompetensi"
+                            children: t("skills.competencyHeading")
                         }, void 0, false, {
                             fileName: "[project]/app/components/Skills.tsx",
-                            lineNumber: 39,
+                            lineNumber: 27,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$Skills$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].divider
                         }, void 0, false, {
                             fileName: "[project]/app/components/Skills.tsx",
-                            lineNumber: 40,
+                            lineNumber: 28,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -546,36 +478,36 @@ function Skills() {
                                             children: "•"
                                         }, void 0, false, {
                                             fileName: "[project]/app/components/Skills.tsx",
-                                            lineNumber: 44,
+                                            lineNumber: 32,
                                             columnNumber: 17
                                         }, this),
                                         item
                                     ]
                                 }, index, true, {
                                     fileName: "[project]/app/components/Skills.tsx",
-                                    lineNumber: 43,
+                                    lineNumber: 31,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/components/Skills.tsx",
-                            lineNumber: 41,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/components/Skills.tsx",
-                    lineNumber: 38,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/components/Skills.tsx",
-            lineNumber: 24,
+            lineNumber: 12,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/components/Skills.tsx",
-        lineNumber: 23,
+        lineNumber: 11,
         columnNumber: 5
     }, this);
 }
