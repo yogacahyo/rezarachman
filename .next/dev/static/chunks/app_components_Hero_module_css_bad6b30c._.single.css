@@ -1,0 +1,78 @@
+/* [project]/app/components/Hero.module.css [app-client] (css) */
+.Hero-module__gNeX-G__hero {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+}
+
+.Hero-module__gNeX-G__container {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.Hero-module__gNeX-G__name {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #8ab4f833;
+  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.Hero-module__gNeX-G__divider {
+  background-color: var(--accent);
+  border-radius: 2px;
+  width: 100px;
+  height: 4px;
+  margin: 0 auto 2rem;
+}
+
+.Hero-module__gNeX-G__contactInfo {
+  color: var(--text-dim);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  display: flex;
+}
+
+.Hero-module__gNeX-G__contactLink {
+  color: var(--foreground);
+  transition: color .3s;
+  position: relative;
+}
+
+.Hero-module__gNeX-G__contactLink:hover {
+  color: var(--primary);
+}
+
+.Hero-module__gNeX-G__separator {
+  color: var(--accent);
+}
+
+.Hero-module__gNeX-G__address {
+  color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+  .Hero-module__gNeX-G__name {
+    font-size: 2.5rem;
+  }
+
+  .Hero-module__gNeX-G__contactInfo {
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .Hero-module__gNeX-G__separator {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=app_components_Hero_module_css_bad6b30c._.single.css.map*/

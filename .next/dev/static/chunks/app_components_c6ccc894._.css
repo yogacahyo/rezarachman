@@ -1,0 +1,312 @@
+/* [project]/app/components/Hero.module.css [app-client] (css) */
+.Hero-module__gNeX-G__hero {
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+}
+
+.Hero-module__gNeX-G__container {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.Hero-module__gNeX-G__name {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px #8ab4f833;
+  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+.Hero-module__gNeX-G__divider {
+  background-color: var(--accent);
+  border-radius: 2px;
+  width: 100px;
+  height: 4px;
+  margin: 0 auto 2rem;
+}
+
+.Hero-module__gNeX-G__contactInfo {
+  color: var(--text-dim);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  display: flex;
+}
+
+.Hero-module__gNeX-G__contactLink {
+  color: var(--foreground);
+  transition: color .3s;
+  position: relative;
+}
+
+.Hero-module__gNeX-G__contactLink:hover {
+  color: var(--primary);
+}
+
+.Hero-module__gNeX-G__separator {
+  color: var(--accent);
+}
+
+.Hero-module__gNeX-G__address {
+  color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+  .Hero-module__gNeX-G__name {
+    font-size: 2.5rem;
+  }
+
+  .Hero-module__gNeX-G__contactInfo {
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .Hero-module__gNeX-G__separator {
+    display: none;
+  }
+}
+
+/* [project]/app/components/Profile.module.css [app-client] (css) */
+.Profile-module__20d00G__section {
+  background-color: #111;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+}
+
+.Profile-module__20d00G__container {
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+}
+
+.Profile-module__20d00G__column {
+  flex-direction: column;
+  display: flex;
+}
+
+.Profile-module__20d00G__heading {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Profile-module__20d00G__divider {
+  background-color: var(--accent);
+  width: 60px;
+  height: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.Profile-module__20d00G__text {
+  color: var(--foreground);
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.Profile-module__20d00G__educationCard {
+  background: var(--secondary);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform .3s;
+}
+
+.Profile-module__20d00G__educationCard:hover {
+  transform: translateY(-5px);
+}
+
+.Profile-module__20d00G__university {
+  color: var(--foreground);
+  margin-bottom: .5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.Profile-module__20d00G__major {
+  color: var(--text-dim);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .Profile-module__20d00G__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* [project]/app/components/Experience.module.css [app-client] (css) */
+.Experience-module__L-MSRG__section {
+  background-color: var(--background);
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+}
+
+.Experience-module__L-MSRG__container {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.Experience-module__L-MSRG__heading {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Experience-module__L-MSRG__divider {
+  background-color: var(--accent);
+  width: 60px;
+  height: 3px;
+  margin-bottom: 2rem;
+}
+
+.Experience-module__L-MSRG__timeline {
+  border-left: 2px solid var(--border);
+  padding-left: 20px;
+  position: relative;
+}
+
+.Experience-module__L-MSRG__item {
+  margin-bottom: 2rem;
+  padding-left: 20px;
+  position: relative;
+}
+
+.Experience-module__L-MSRG__item:last-child {
+  margin-bottom: 0;
+}
+
+.Experience-module__L-MSRG__marker {
+  background-color: var(--accent);
+  border: 2px solid var(--background);
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  transition: transform .3s;
+  position: absolute;
+  top: 5px;
+  left: -26px;
+}
+
+.Experience-module__L-MSRG__item:hover .Experience-module__L-MSRG__marker {
+  background-color: var(--primary);
+  transform: scale(1.5);
+}
+
+.Experience-module__L-MSRG__content {
+  background: var(--secondary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.Experience-module__L-MSRG__item:hover .Experience-module__L-MSRG__content {
+  transform: translateX(10px);
+  box-shadow: 0 4px 20px #0000004d;
+}
+
+.Experience-module__L-MSRG__year {
+  color: var(--primary);
+  background: #8ab4f81a;
+  border-radius: 20px;
+  margin-bottom: .5rem;
+  padding: .25rem .75rem;
+  font-size: .875rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.Experience-module__L-MSRG__title {
+  color: var(--foreground);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* [project]/app/components/Skills.module.css [app-client] (css) */
+.Skills-module__lhWK4a__section {
+  background-color: #111;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem 6rem;
+  display: flex;
+}
+
+.Skills-module__lhWK4a__container {
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+}
+
+.Skills-module__lhWK4a__heading {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Skills-module__lhWK4a__divider {
+  background-color: var(--accent);
+  width: 60px;
+  height: 3px;
+  margin-bottom: 2rem;
+}
+
+.Skills-module__lhWK4a__list {
+  padding: 0;
+  list-style: none;
+}
+
+.Skills-module__lhWK4a__listItem {
+  color: var(--foreground);
+  align-items: flex-start;
+  gap: .8rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  transition: transform .2s;
+  display: flex;
+}
+
+.Skills-module__lhWK4a__listItem:hover {
+  color: var(--primary);
+  transform: translateX(5px);
+}
+
+.Skills-module__lhWK4a__bullet {
+  color: var(--accent);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .Skills-module__lhWK4a__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/*# sourceMappingURL=app_components_c6ccc894._.css.map*/

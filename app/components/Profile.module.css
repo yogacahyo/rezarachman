@@ -1,0 +1,74 @@
+.section {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #111111; /* Slightly lighter than pure black */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--foreground);
+  text-align: justify;
+}
+
+.educationCard {
+  background: var(--secondary);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.educationCard:hover {
+  transform: translateY(-5px);
+}
+
+.university {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.major {
+  font-size: 1rem;
+  color: var(--text-dim);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,77 @@
+/* [project]/app/components/Profile.module.css [app-client] (css) */
+.Profile-module__20d00G__section {
+  background-color: #111;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+}
+
+.Profile-module__20d00G__container {
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+}
+
+.Profile-module__20d00G__column {
+  flex-direction: column;
+  display: flex;
+}
+
+.Profile-module__20d00G__heading {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Profile-module__20d00G__divider {
+  background-color: var(--accent);
+  width: 60px;
+  height: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.Profile-module__20d00G__text {
+  color: var(--foreground);
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.Profile-module__20d00G__educationCard {
+  background: var(--secondary);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform .3s;
+}
+
+.Profile-module__20d00G__educationCard:hover {
+  transform: translateY(-5px);
+}
+
+.Profile-module__20d00G__university {
+  color: var(--foreground);
+  margin-bottom: .5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.Profile-module__20d00G__major {
+  color: var(--text-dim);
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .Profile-module__20d00G__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=app_components_Profile_module_css_bad6b30c._.single.css.map*/

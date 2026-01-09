@@ -1,0 +1,67 @@
+/* [project]/app/components/Skills.module.css [app-client] (css) */
+.Skills-module__lhWK4a__section {
+  background-color: #111;
+  justify-content: center;
+  width: 100%;
+  padding: 4rem 2rem 6rem;
+  display: flex;
+}
+
+.Skills-module__lhWK4a__container {
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+}
+
+.Skills-module__lhWK4a__heading {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.Skills-module__lhWK4a__divider {
+  background-color: var(--accent);
+  width: 60px;
+  height: 3px;
+  margin-bottom: 2rem;
+}
+
+.Skills-module__lhWK4a__list {
+  padding: 0;
+  list-style: none;
+}
+
+.Skills-module__lhWK4a__listItem {
+  color: var(--foreground);
+  align-items: flex-start;
+  gap: .8rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  transition: transform .2s;
+  display: flex;
+}
+
+.Skills-module__lhWK4a__listItem:hover {
+  color: var(--primary);
+  transform: translateX(5px);
+}
+
+.Skills-module__lhWK4a__bullet {
+  color: var(--accent);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .Skills-module__lhWK4a__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+/*# sourceMappingURL=app_components_Skills_module_css_bad6b30c._.single.css.map*/
